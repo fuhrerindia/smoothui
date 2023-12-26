@@ -1,0 +1,9 @@
+<!DOCTYPE root [
+    <!ELEMENT root (head, body)>
+    <!ELEMENT accord (title, content)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT content (#PCDATA)>
+]>
+<root>
+    <h
+</root>

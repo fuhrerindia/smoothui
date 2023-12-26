@@ -24,6 +24,7 @@ $borderlight: #afafaf;
     border: 0;
     cursor: pointer;
     border-radius: 3px;
+    width: fit-content;
 }
 .btn-primary{
     background-color: $blue;
@@ -74,6 +75,24 @@ $borderlight: #afafaf;
 .txt-white{
     color: $white;
 }
+.txt-body{
+    font-size: 18px;
+}
+.txt-small{
+    font-size: 14px;
+}
+.txt-heading{
+    font-size: 28px;
+}
+.txt-bold{
+    font-weight: bold;
+}
+.txt-italic{
+    font-style: italic;
+}
+.txt-underline{
+    text-decoration: underline;
+}
 // CHECKBOX
 input[type=checkbox]{
     border-radius: 3px;
@@ -84,6 +103,9 @@ input[type=checkbox]{
 // BACKGROUNDS
 .bg-carrot{
     background-color: $carrot;
+}
+.bg-nature{
+    background-color: $nature;
 }
 // FLEXBOX
 .flex{
@@ -171,3 +193,141 @@ input[type=checkbox]{
     width: 5%;
 }
 
+// ACCORD
+.accord > .accord-content{
+    display: none;
+}
+.accord > .accord-title{
+    border: 1px solid $borderlight;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+}
+.accord-title::after{
+    content: 'd';
+}
+.accord-content{
+    border: 1px solid $borderlight;
+    border-top: 0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 10px;
+    line-height: 25px;
+}
+.container{
+    width: 50%;
+    padding: 0px 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.header{
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    box-shadow: 0px 0px 7px 3px $borderlight;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-list > li:nth-child(1){
+    margin-left: 0;
+}
+.nav-list > li{
+    margin-left: 20px;
+}
+.accord{
+    margin: 10px;
+}
+.accord-group{
+
+}
+.accord-group > .accord{
+    margin:0;
+}
+.accord-group > .accord:first-child{
+    border-radius: 5px 5px 0px 0px;
+}
+.accord-group > .accord:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-col-reverse{
+    flex-direction: column-reverse;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.list-no-marker, .list-no-marker ul{
+    list-style: none;
+}
+
+// CONTAINER
+.container{
+    margin: 10px;
+    display: flex;
+}
+// FORMS
+input[type=text], input[type=email], input[type=tel]{
+    padding: 8px;
+    outline: 0;
+    border: 1px solid $borderlight;
+    border-bottom: 1px solid $black;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 5px 0px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
+    border-bottom-color: $blue;
+}
+form{
+    display: flex;
+}
+.switch{
+    width: 40px;
+    border: 1px solid $black;
+    height: 20px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.no-display{
+    display: none;
+}
+.switch > div{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: $black;
+    margin: 0px 3px;
+    transition: 0.2s;
+}
+.radio-enabled{
+    background-color: $blue!important;
+    align-content: flex-end;
+}
+.switch-on > div{
+    margin-left: 22px;
+}
+// RESPONSIVE
+@media screen and (max-width: 950px){
+    
+}
